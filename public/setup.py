@@ -92,13 +92,3 @@ class Farm:
 
 farm = Farm()
 
-def sell_eggs(x):
-    farm.sell_eggs(x)
-
-def sell_corn(x):
-    farm.sell_corn(x)
-
-corn_price = farm.corn_price
-eggs_price = farm.eggs_price
-corn_stock = farm.corn_stock
-eggs_stock = farm.eggs_stock
