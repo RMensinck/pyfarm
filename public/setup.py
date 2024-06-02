@@ -74,7 +74,7 @@ class Farm:
             print("Not enough eggs in stock")
             return
         self.eggs_stock -= amount
-        self._profit += self.eggs_price
+        self._profit += self.eggs_price * amount
         self.update_profit()
         print(f"Sold {amount} egg(s) for ${self.eggs_price}")
 
@@ -83,7 +83,7 @@ class Farm:
             print("Not enough corn in stock")
             return
         self.corn_stock -= amount
-        self._profit += self.corn_price
+        self._profit += self.corn_price * amount
         self.update_profit()
         print(f"Sold {amount} corn for ${self.corn_price}")
 
